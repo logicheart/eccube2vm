@@ -22,24 +22,32 @@ Linux, Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
 2. パッケージよりインストールする。
 3. ターミナルでvagrantのインストールを確認
 
-    $ vagrant -v
-    Vagrant 1.7.2
+```
+$ vagrant -v
+Vagrant 1.7.2
+```
 
 ### その他の準備
 
 1. プラグインのインストール
 
-    $ vagrant plugin install vagrant-omnibus
+```
+$ vagrant plugin install vagrant-omnibus
+```
 
 ### プロダクトのダウンロード
 
-    $ cd <適当なpath>
-    $ git clone https://github.com/logicheart/eccube2vm.git
+```
+$ cd <適当なpath>
+$ git clone https://github.com/logicheart/eccube2vm.git
+```
 
 ### サーバ構築・起動
 
-    $ cd <path>/eccube2vm/
-    $ vagrant up
+```
+$ cd <path>/eccube2vm/
+$ vagrant up
+```
 
 *Congratulations!!! Install Success. Please access http://localhost:10080* と表示されたら正常終了です。
 
@@ -53,4 +61,6 @@ Linux, Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
 
 ### サーバ停止
 
-    $ vagrant halt
+```
+$ vagrant halt
+```

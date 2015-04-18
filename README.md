@@ -8,26 +8,43 @@ EC-CUBE2.13系をローカル仮想環境にインストールするためのプ
 
 Linux, Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
 
-*※現時点ではMacでの環境構築方法を記述しています。Windows版は追って記載します。*
+### 【Windows】msysGit(Git for Windows)のインストール
 
+1. https://msysgit.github.io/ よりGit for Windowsをダウンロード
+2. exeファイルを実行し指示に従いインストールする。
+3. インストール中「Use Git from Git Bash Only」「Use Git from the Windows Command Prompt」を選択する画面では、「Use Git from Git Bash Only」を選択する。（説明の都合上）
+4. インストール中「Checkout Windows-style, commit Unix-style line endings」「Checkout as-is, commit Unix-style line endings」を選択する画面では、「Checkout as-is, commit Unix-style line endings」を選択する。（今回の環境構築には関係ないが、オススメ）
 
-### VirtualBoxのインストール
+※Macの場合はBashターミナル、Gitがデフォルトでインストールされているので新たにインストールする必要はありません。
+
+### 【Mac&Windows共通】VirtualBoxのインストール
 
 1. http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html より対象OSのパッケージをダウンロード
 2. パッケージよりインストールする。（画面の指示通りで問題ありません）
 
-### Vagrant のインストール
+### 【Mac&Windows共通】Vagrant のインストール
 
 1. http://www.vagrantup.com/downloads より対象OSのパッケージをダウンロード
 2. パッケージよりインストールする。
-3. ターミナルでvagrantのインストールを確認
+
+### ターミナルの起動方法
+
+####【Mac】
+
+アプリケーション－「ユーティリティ」－「ターミナル」を起動
+
+####【Windows】
+
+スタートメニュー－「Git」－「Git Bash」を起動
+
+#### ターミナルでvagrantのインストールを確認
 
 ```
 $ vagrant -v
 Vagrant 1.7.2
 ```
 
-### その他の準備
+### 【Mac&Windows共通】その他の準備
 
 1. プラグインのインストール
 
@@ -38,14 +55,20 @@ $ vagrant plugin install vagrant-omnibus
 ### プロダクトのダウンロード
 
 ```
-$ cd <適当なpath>
+$ pwd
+（現在のディレクトリ）
+$ cd <適当なディレクトリ>
 $ git clone https://github.com/logicheart/eccube2vm.git
+$ ls
+ :
+eccube2vm
+ :
 ```
 
 ### サーバ構築・起動
 
 ```
-$ cd <path>/eccube2vm/
+$ cd eccube2vm
 $ vagrant up
 ```
 

@@ -6,9 +6,9 @@ EC-CUBE2.13系をローカル仮想環境にインストールするためのプ
 
 ## 環境構築方法
 
-Linux（CentOS 6.5), Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
+Linux(CentOS 6.5), Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
 
-### 【Windows】msysGit(Git for Windows)のインストール
+### msysGit(Git for Windows)のインストール【Windowsのみ】
 
 1. https://msysgit.github.io/ よりGit for Windowsをダウンロード
 2. exeファイルを実行し指示に従いインストールする。
@@ -17,36 +17,46 @@ Linux（CentOS 6.5), Apache, PostgreSQL, PHPの環境をVagrantで構築でき�
 
 ※Macの場合はBashターミナル、Gitがデフォルトでインストールされているので新たにインストールする必要はありません。
 
-### 【Mac&Windows共通】VirtualBoxのインストール
+### VirtualBoxのインストール【Mac&Windows共通】
 
 1. http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html より対象OSのパッケージをダウンロード
 2. パッケージよりインストールする。（画面の指示通りで問題ありません）
 
-### 【Mac&Windows共通】Vagrant のインストール
+### Vagrant のインストール【Mac&Windows共通】
 
 1. http://www.vagrantup.com/downloads より対象OSのパッケージをダウンロード
 2. パッケージよりインストールする。
 
 ### ターミナルの起動方法
 
-####【Mac】
+【Mac】
 
 アプリケーション－「ユーティリティ」－「ターミナル」を起動
 
-####【Windows】
+【Windows】
 
 スタートメニュー－「Git」－「Git Bash」を起動
 
-#### ターミナルでvagrantのインストールを確認
+#### Vagrantのインストールを確認
+
+ターミナル上で
 
 ```
 $ vagrant -v
 Vagrant 1.7.2
 ```
 
-### 【Mac&Windows共通】その他の準備
+### その他の準備
 
-1. プラグインのインストール
+1. 文字コードの制御【Windowsのみ】
+
+```
+$ git config --global core.autocrlf false
+```
+
+※LF→CRLFへの自動変換を無効化する
+
+2. Omnibusプラグインのインストール【Mac&Windows共通】
 
 ```
 $ vagrant plugin install vagrant-omnibus

@@ -5,7 +5,7 @@
 /data/logs/*
 /data/Smarty/template_c/*/*
 /data/upload/*/*
-/html/install/*
+#/html/install/*
 /html/upload/*/*
 /phpunit.xml
 !dummy

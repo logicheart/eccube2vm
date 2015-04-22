@@ -13,7 +13,7 @@ Linux, Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
 1. https://msysgit.github.io/ よりGit for Windowsをダウンロード
 2. exeファイルを実行し指示に従いインストールする。
 3. インストール中「Use Git from Git Bash Only」「Use Git from the Windows Command Prompt」を選択する画面では、「Use Git from Git Bash Only」を選択する。（説明の都合上）
-4. インストール中「Checkout Windows-style, commit Unix-style line endings」「Checkout as-is, commit Unix-style line endings」を選択する画面では、「Checkout as-is, commit Unix-style line endings」を選択する。（今回の環境構築には関係ないが、オススメ）
+4. インストール中「Checkout Windows-style, commit Unix-style line endings」「Checkout as-is, commit Unix-style line endings」「Checkout as-is, commit as-is」を選択する画面では、 **「Checkout as-is, commit as-is」を選択する。** （絶対！）
 
 ※Macの場合はBashターミナル、Gitがデフォルトでインストールされているので新たにインストールする必要はありません。
 

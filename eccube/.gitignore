@@ -3,10 +3,10 @@
 /data/download/*
 /data/downloads/*
 /data/logs/*
-/data/Smarty/template_c/**/*
-/data/upload/**/*
+/data/Smarty/template_c/*/*
+/data/upload/*/*
 /html/install/*
-/html/upload/**/*
+/html/upload/*/*
 /phpunit.xml
 !dummy
 !.gitkeep

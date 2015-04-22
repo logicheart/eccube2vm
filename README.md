@@ -6,7 +6,7 @@ EC-CUBE2.13系をローカル仮想環境にインストールするためのプ
 
 ## 環境構築方法
 
-Linux, Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
+Linux（CentOS 6.5), Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
 
 ### 【Windows】msysGit(Git for Windows)のインストール
 

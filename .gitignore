@@ -7,8 +7,11 @@
 /data/download/temp/*
 /data/downloads/tmp/*/*
 /data/logs/*
+!/data/logs
 /data/Smarty/template_c/*
+!/data/Smarty/template_c
 /data/upload/csv/*/*
+!/data/upload/csv
 /html/install/temp/*
 /html/upload/graph_image/*
 /html/upload/mobile_image/*

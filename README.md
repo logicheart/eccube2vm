@@ -8,6 +8,25 @@ EC-CUBE2.13系をローカル仮想環境にインストールするためのプ
 
 Linux(CentOS 6.5), Apache, PostgreSQL, PHPの環境をVagrantで構築できます。
 
+### BIOSの仮想化機構有効化【Windowsのみ】
+
+VirtualBoxで仮想OSを構築する場合、BIOSの仮想化機構を有効化しておく必要があります。
+
+（仮想OSが32bitの場合は不要？）
+
+PCに搭載されたCPUに従い、BIOS画面上で
+
+- Intel Virtualization Technology(VT-x)
+- AMD Virtualization(AMD-v)
+
+のいずれかを有効にします。
+
+BIOSの設定方法はメーカー・PCごとに異なります。
+
+例）HP製ノートPCの場合 http://h20564.www2.hp.com/hpsc/doc/public/display?docId=emr_na-c03836690
+
+その他のPCの場合はメーカーサイトを参照してください。
+
 ### msysGit(Git for Windows)のインストール【Windowsのみ】
 
 1. https://msysgit.github.io/ よりGit for Windowsをダウンロード
@@ -75,7 +94,7 @@ eccube2vm
  :
 ```
 
-### サーバ構築・起動
+### 仮想サーバ構築・起動
 
 ```
 $ cd eccube2vm
@@ -86,14 +105,16 @@ $ vagrant up
 
 ※初回は仮想マシンのイメージをダウンロードするため時間がかかります。
 
-### サーバにアクセス
+### 仮想サーバにアクセス
 
 1. ブラウザよりhttp://localhost:10080 にアクセス
 
 2. EC-CUBEのインストーラが表示されるので、指示に従い初期構築を行う。
 
-### サーバ停止
+### 仮想サーバ停止
 
 ```
 $ vagrant halt
 ```
+
+※PCをシャットダウンする前に必ず仮想サーバを停止するようにしてください。
